@@ -119,8 +119,7 @@ const LoggedInPage = ({ userEmail }) => {
     localStorage.removeItem("token"); // Assuming token is stored in localStorage
 
     // Redirect the user to the login page
-    window.location.href =
-      "https://password-reset-flo-frontend.netlify.app/login"; // Redirect to login page
+    window.location.href = "/login"; // Redirect to login page
   };
 
   return (
