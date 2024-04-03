@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom"; // Import Link
 import { Card, Button, Modal, Form, Carousel } from "react-bootstrap";
 import "./Styles/LoggedInPage.css"; // Import the CSS file
 
@@ -113,6 +114,13 @@ const LoggedInPage = ({ userEmail }) => {
     setSelectedTrip(trip);
     setShowDeleteModal(true);
   };
+  const handleLogout = () => {
+    // Clear user authentication data (e.g., token)
+    localStorage.removeItem("token"); // Assuming token is stored in localStorage
+
+    // Redirect the user to the login page
+    window.location.href = "/login"; // Redirect to login page
+  };
 
   return (
     <div className="container mt-5 logged-in-page-container">
@@ -120,8 +128,17 @@ const LoggedInPage = ({ userEmail }) => {
         <h1>Welcome to Travel Booking Portal!</h1>
         <div className="d-flex align-items-end">
           <Button
+            variant="danger"
+            onClick={handleLogout}
+            className="py-2"
+            style={{ width: "120px", height: "40px", marginRight: "10px" }}
+          >
+            Logout
+          </Button>
+          <Button
             variant="primary"
             size="sm"
+            className="py-2"
             onClick={() => setShowModal(true)}
             style={{ width: "150px", height: "40px" }}
           >
