@@ -1,0 +1,120 @@
+/* LoggedInPage.css */
+.logged-in-page-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.booking-information,
+.travel-deals {
+    margin-bottom: 30px;
+}
+
+.booking-information h3,
+.travel-deals h3 {
+    margin-bottom: 10px;
+}
+
+/* Booking Modal */
+.booking-modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-modal-header {
+    background-color: #007bff;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.booking-modal-footer {
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Edit and Delete Modals */
+.edit-delete-modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-delete-modal-header {
+    background-color: #dc3545;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.edit-delete-modal-footer {
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Random Image Card */
+.random-image-card {
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.random-image-card-header {
+    background-color: #28a745;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.random-image-card-body {
+    padding: 20px;
+}
+
+.random-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+.custom-button {
+    padding: 12px 24px;
+    /* Adjusted width and height */
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.custom-button-primary:hover {
+    background-color: #0056b3;
+}
+
+.custom-button-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.custom-button-danger:hover {
+    background-color: #c82333;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.button-group .custom-button {
+    margin-right: 10px;
+}

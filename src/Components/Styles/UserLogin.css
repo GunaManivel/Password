@@ -1,0 +1,110 @@
+/* UserLogin.css */
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    width: 400px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 16px;
+    color: #555;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.forget-password-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forget-password-link:hover {
+    text-decoration: underline;
+}
+
+.text-center {
+    margin-top: 20px;
+}
+
+.text-muted {
+    font-size: 14px;
+    color: #888;
+}
+
+.text-muted a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-muted a:hover {
+    text-decoration: underline;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    .login-container {
+        width: 90%;
+    }
+}
